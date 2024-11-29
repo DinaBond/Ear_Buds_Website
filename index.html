@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Novo EarBuds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link href="css/grid.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- link to greensock main library and scroll plugin -->
+  </head>
+  <body>
+    <h1 class="hidden">Earbuds Promotional Page</h1>
+    <header>
+      <nav id="main-nav" class="grid-con">
+        <h2 class="hidden">Main Navigation</h2>
+        <div class="burger-icon">+</div>
+        <a class="m-col-start-1 m-col-end-4" href="index.html"
+          ><img
+            class="black-logo"
+            src="images/logo-black-mobile.svg"
+            alt="logo tablet"
+        /></a>
+        <div id="burger-con" class="m-col-start-4 m-col-end-13">
+          <a href="index.html"
+            ><img class="logo-mobile" src="images/logo.svg" alt="Logo"
+          /></a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#model-3d">Features</a></li>
+            <li><a href="#look-inside">View Inside</a></li>
+            <li><a href="#scrolling-animation">Detailed Look</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-opening">
+        <h2 class="hidden">Opening Section</h2>
+        <img
+          class="background-element"
+          src="images/background-mobile-s1.svg"
+          alt="background-element"
+        />
+        <div class="grid-con">
+          <img
+            class="col-span-full opening-logo"
+            src="images/logo-black-mobile.svg"
+            alt="logo for mobile"
+          />
+          <p class="opening-text col-span-full">In all flagship stores</p>
+          <img
+            class="col-span-full m-col-start-3 m-col-end-11 opening-image"
+            src="images/opening-image.png"
+            alt="image of earbuds"
+          />
+
+          <div class="opening-preorder-box">
+            <p>Pre order from December 1</p>
+          </div>
+
+          <img
+            src="images/opening-arrow.svg"
+            alt="scroll down"
+            class="col-span-full opening-arrow"
+          />
+
+          <p
+            class="opening-scroll-text col-start-2 col-end-4 m-col-start-5 m-col-end-9"
+          >
+            Swipe to rediscover the beauty of sound
+          </p>
+        </div>
+      </section>
+
+      <section id="model-3d" class="section-model-object">
+        <h2 class="hidden">Model Viewer</h2>
+        <div class="grid-con">
+          <p class="heading heading-model col-span-full">
+            NEW APPROACH TO LISTEN
+          </p>
+
+          <div class="col-span-full">
+            <model-viewer
+              disable-zoom
+              src="model/last version.gltf"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              tone-mapping="aces"
+              poster="poster.webp"
+              shadow-intensity="1.39"
+              environment-image="legacy"
+              shadow-softness="1"
+              exposure="0.92"
+            >
+              <button
+                class="Hotspot"
+                slot="hotspot-1"
+                data-position="-0.6913285593306888m 0.4755106225675758m 0.81597043224411m"
+                data-normal="0.8274174612278339m -0.0011395591780524786m 0.5615861877398391m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation" id="hotspot-1"></div>
+              </button>
+
+              <button
+                class="Hotspot"
+                slot="hotspot-2"
+                data-position="-1.0816979598075132m 0.13947711158136739m 0.6222602286654042m"
+                data-normal="0.16521590991543322m -0.4881795152147408m 0.8569623469181805m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation" id="hotspot-2"></div>
+              </button>
+
+              <button
+                class="Hotspot"
+                slot="hotspot-3"
+                data-position="-0.889484755596412m 0.38136320861164186m -0.1710945273430528m"
+                data-normal="0.41378578482193695m -0.2635039611032355m 0.8714051794442115m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation" id="hotspot-3"></div>
+              </button>
+
+              <button
+                class="Hotspot"
+                slot="hotspot-4"
+                data-position="-1.2156105024984145m 0.2830833911985464m -0.34658484520954747m"
+                data-normal="-0.9015564605926133m -0.08024411626759116m -0.425155066026683m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation" id="hotspot-4"></div>
+              </button>
+
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
+              <div id="ar-prompt">
+                <img src="ar_hand_prompt.png" />
+              </div>
+            </model-viewer>
+          </div>
+          <div class="hotspots-mobile-container col-span-full">
+            <div class="hotspot-mobile">
+              <div class="hotspot-m-image">
+                <img
+                  src="images/waterproof-mobile.svg"
+                  alt="waterproof-mobile"
+                />
+              </div>
+
+              <div class="hotspot-m-info">
+                <p class="hotspot-m-title">Waterproof</p>
+                <p class="hotspot-m-text">
+                  Reliable waterproofing for all-weather listening and
+                  sweat-resistant durability
+                </p>
+              </div>
+            </div>
+
+            <div class="hotspot-mobile">
+              <div class="hotspot-m-image">
+                <img src="images/sound-mobile.svg" alt="waterproof-mobile" />
+              </div>
+
+              <div class="hotspot-m-info">
+                <p class="hotspot-m-title">Upgraded Sound Quality</p>
+                <p class="hotspot-m-text">
+                  Enhanced sound with richer bass, clear mids, and sharp highs
+                </p>
+              </div>
+            </div>
+
+            <div class="hotspot-mobile">
+              <div class="hotspot-m-image">
+                <img src="images/noise-mobile.svg" alt="waterproof-mobile" />
+              </div>
+
+              <div class="hotspot-m-info">
+                <p class="hotspot-m-title">Noise Reduction</p>
+                <p class="hotspot-m-text">
+                  Advanced noise reduction for immersive listening, blocking out
+                  distractions effortlessly
+                </p>
+              </div>
+            </div>
+
+            <div class="hotspot-mobile">
+              <div class="hotspot-m-image">
+                <img
+                  src="images/bluetooth-mobile.svg"
+                  alt="waterproof-mobile"
+                />
+              </div>
+
+              <div class="hotspot-m-info">
+                <p class="hotspot-m-title">Bluetooth Connection</p>
+                <p class="hotspot-m-text">
+                  Seamless Bluetooth connection for stable, lag-free, and easy
+                  pairing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="images/background-model-s2.svg"
+          alt="background for section2"
+          class="background-element-s2"
+        />
+      </section>
+
+      <section id="look-inside" class="section-xray grid-con">
+        <h2 class="hidden">X-Ray Section</h2>
+        <p class="heading col-span-full">
+          TAKE A LOOK INSIDE THE ÉCOUTER EARBUDS
+        </p>
+
+        <div class="col-span-full">
+          <div id="mobile-tablet-view">
+            <img src="images/earbuds-xray.png" alt="earbud-x-ray" />
+            <img src="images/earbuds.png" alt="earbud" />
+          </div>
+          <div id="comparison-con">
+            <div id="xray">
+              <div id="divisor"></div>
+            </div>
+            <input type="range" min="0" max="100" value="50" id="slider" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="scrolling-animation"
+        class="section-xray full-width-grid-con"
+      >
+        <h2 class="hidden">Scrolling Animation Section</h2>
+        <p class="heading col-span-full">CHECK IT OUT</p>
+
+        <div class="col-span-full">
+          <canvas id="explode-view"></canvas>
+        </div>
+      </section>
+
+      <section id="colors" class="section-slider-colors grid-con">
+        <h2 class="hidden">Choose your Color Section</h2>
+        <p class="heading col-span-full m-col-span-full">CHOOSE YOUR COLOR</p>
+        <div class="col-span-full slider">
+          <div class="images"><img src="images/color1.png" alt="image1" /></div>
+          <div class="images"><img src="images/color2.png" alt="image2" /></div>
+          <div class="images"><img src="images/color3.png" alt="image3" /></div>
+        </div>
+        <div class="col-span-full slider-buttons">
+          <button class="pre-button">
+            <img src="images/left-btn.svg" alt="prev btn" />
+          </button>
+          <button class="next-button">
+            <img src="images/right-btn.svg" alt="next btn" />
+          </button>
+        </div>
+      </section>
+
+      <section class="grid-con section-closing">
+        <p class="finish-text col-span-full">
+          Ready to upgrade your audio experience? Get started today
+        </p>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <h2 class="hidden">Footer</h2>
+      <div class="grid-con">
+        <div class="col-span-full footer-contacts">
+          <p class="footer-heading">Contacts</p>
+          <p class="footer-phone-nember">+1 (519) 555 - 4565</p>
+          <p class="footer-email">ecouter@gmail.com</p>
+        </div>
+
+        <div class="col-span-full footer-follow-us">
+          <p class="footer-heading">Follow Us</p>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <p>|</p>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+
+        <img
+          src="images/logo.svg"
+          alt="logo image"
+          class="footer-logo col-span-full"
+        />
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
