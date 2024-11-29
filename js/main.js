@@ -86,7 +86,7 @@
   const images = [];
   for (let i = 0; i < frameCount; i++) {
     const img = new Image();
-    img.src = `images/images_animation_${(i + 1)
+    img.src = `images/images_animation${(i + 1)
       .toString()
       .padStart(4, "0")}.jpg`;
     images.push(img);
@@ -99,7 +99,7 @@
   };
 
   gsap.to(buds, {
-    frame: 97,
+    frame: 96,
     snap: "frame",
     scrollTrigger: {
       trigger: "#explode-view",
