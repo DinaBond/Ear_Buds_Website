@@ -81,12 +81,14 @@
   canvas.width = 1920;
   canvas.height = 1080;
 
-  const frameCount = 450;
+  const frameCount = 98;
 
   const images = [];
   for (let i = 0; i < frameCount; i++) {
     const img = new Image();
-    img.src = `images/explode_${(i + 1).toString().padStart(4, "0")}.webp`;
+    img.src = `images/images_animation_${(i + 1)
+      .toString()
+      .padStart(4, "0")}.jpg`;
     images.push(img);
   }
 
@@ -97,7 +99,7 @@
   };
 
   gsap.to(buds, {
-    frame: 449,
+    frame: 97,
     snap: "frame",
     scrollTrigger: {
       trigger: "#explode-view",
