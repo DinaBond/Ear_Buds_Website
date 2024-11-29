@@ -1,0 +1,130 @@
+@use '../abstracts/variables' as v;
+
+
+.section-opening {
+    position: relative;
+}
+
+.background-element {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 20%;
+}
+
+.opening-logo {
+    margin-top: 70px;
+    width: 350px;
+    margin-left: 50px;
+}
+
+.opening-preorder-box {
+    position: absolute;
+    background-color: v.$secondary-color;
+    opacity: 0.86;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: 130px;
+    height: 90px;
+    bottom: 30%;
+    right: 50px;
+}
+
+.opening-arrow {
+    margin: 30px auto;
+    width: 40px;
+}
+
+.section-model-object {
+    margin-top: 70px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.background-element-s2 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: -80px;
+}
+
+#explode-view {
+    max-width: 100%;
+  }
+
+  .section-closing {
+    margin: 60px 0px;
+  }
+
+  .finish-text {
+    background-color: v.$secondary-color;
+    opacity: 0.8;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    padding: 18px 28px;
+    width: 262px;
+    height: 107px;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 10px 15px -5px #0039C8;
+  }
+
+
+@media screen and (min-width: 768px) {
+    .opening-logo, .opening-text {
+        display: none;
+    }
+
+    .opening-preorder-box {
+        color: white;
+        font-size: 30px;
+        padding: 10px 15px;
+        width: 195px;
+        height: 157px;
+        bottom: 35%;
+        right: 110px;
+    }
+
+    .hotspots-mobile-container {
+        display: none;
+    }
+
+    .background-element-s2 {
+        bottom: -170px;
+    }
+
+    .finish-text {
+        font-size: 30px;
+        padding: 25px 35px;
+        width: 512px;
+        height: 150px;
+        text-align: center;
+        box-shadow: 0px 15px 15px -5px #0039C8;
+      }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .opening-preorder-box {
+        font-size: 35px;
+        padding: 20px 15px;
+        width: 235px;
+        height: 195px;
+        bottom: 25%;
+        right: 30%;
+    }
+
+    .section-closing {
+        margin: 60px auto;
+    }
+
+    .finish-text {
+        font-size: 40px;
+        width: 812px;
+        height: 180px;
+      }
+    
+}

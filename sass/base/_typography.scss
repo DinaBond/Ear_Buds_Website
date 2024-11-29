@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as v;
+
+body, h1, h2, h3, h4, p, a {
+    font-family: v.$font-family;
+}
+
+.opening-text {
+    text-align: center;
+    font-size: 20px;
+    margin: 21px 25px;
+}
+
+.opening-scroll-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.heading-model {
+    @extend .heading; 
+    padding: 0px 150px 0px 0px;
+    text-align: left;
+    font-size: 48PX;
+}
+
+@media screen and (min-width: 1200px) {
+    .opening-scroll-text {
+        font-size: 30px;
+    }
+
+    .heading {
+        font-size: 55px;
+    }
+
+    .heading-model {
+        text-align: center;
+    }
+}
